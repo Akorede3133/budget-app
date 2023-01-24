@@ -1,1 +1,1 @@
-This is a vanilla javascrpt budget application still under development.
+This is a vanilla javascript budget application with local storage still under development.
