@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="budget-app.css">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="css/all.css">
+    <script src="" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="budget-title">
+            Available Budget in January 2023:
+        </h1>
+
+        <div class="budget-total">
+            0
+        </div>
+
+        <div class="budget-type-container">
+            <div class="budget-income-container">
+                <span class="budget-name budget-income-name">INCOME</span>
+                <span>
+                    <span class="budget-amt budget-income-amount">0</span>
+                    <span class="budget-expense-percent" style="visibility: hidden;">6%</span>
+                </span>
+            </div>
+            <div class="budget-expense-container">
+                <span class="budget-name budget-expense-name">EXPENSE</span>
+                <span>
+                    <span class="budget-amt budget-expense-amount">0</span>
+                    <span class="budget-expense-percent"></span>
+                </span>
+            </div>
+        </div>
+    </header>
+    <section class="description-container">
+        <article class="drop-down-container">
+            <select>
+                <option value="+">+</option>
+                <option value="-">-</option>
+            </select>
+        </article>
+        <article class="text-box">
+            <input type="text" class="input-box" placeholder="Add description">
+        </article>
+        <article class="value-box">
+            <input type="number" class="value-input" placeholder="Value">
+        </article>
+        <article class="submit-container">
+            <i class="fa-solid fa-check"></i>
+        </article>
+    </section>
+
+    <section class="budget-detail">
+        <div class="budget-detail-container">
+            <div class="budget-income-col">
+                <h2 class="income-col-title">INCOME<h2>
+                        <!--<div class=" col-grp income-col-grp">
+                            <span class="col-grp-title">Sales</span>
+                            <span class="col-grp-content">
+                                <span>200</span>
+                                <span class="col-icon"><i class="bi bi-x-circle"></i></span>
+                            </span>
+                        </div>
+                        <div class=" col-grp income-col-grp">
+                            <span class="col-grp-title">Sales</span>
+                            <span class="col-grp-content">
+                                <span>200</span>
+                                <span class="col-icon"><i class="bi bi-x-circle"></i></span>
+                            </span>
+                        </div>-->
+            </div>
+            <div class="budget-expense-col">
+                <h2 class="expense-col-title">EXPENSE<h2>
+                       <!--<div class="col-grp expense-col-grp">
+                            <span class="col-grp-title">House Rent</span>
+                            <span class="col-grp-content">
+                                <span class="col-grp-price">300</span>
+                                <span class="col-grp-percent">31%</span>
+                                <span class="col-icon"><i class="bi bi-x-circle"></i></span>
+                            </span>
+                        </div>
+                        <div class="col-grp expense-col-grp">
+                            <span class="col-grp-title">House Rent</span>
+                            <span class="col-grp-content">
+                                <span class="col-grp-price">300</span>
+                                <span class="col-grp-percent">31%</span>
+                                <span class="col-icon"><i class="bi bi-x-circle"></i></span>
+                            </span>
+                        </div>-->
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
