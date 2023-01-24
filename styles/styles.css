@@ -1,0 +1,185 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header {
+    height: 270px;
+    background: url(../images/background.jpg) center center/cover;
+    padding-block: 20px;
+  }
+  
+  header .budget-title {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+  }
+  
+  header .budget-total {
+    text-align: center;
+    margin-block: 20px;
+    font-size: 2.8rem;
+    color: #ffffff;
+  }
+  
+  header .budget-type-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  header .budget-type-container .budget-amt {
+    font-size: 1rem;
+  }
+  
+  header .budget-type-container .budget-income-container,
+  header .budget-type-container .budget-expense-container {
+    width: 350px;
+    padding: 15px 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .budget-type-container .budget-income-container {
+    background-color: #28b9b5;
+  }
+  
+  header .budget-type-container .budget-expense-container {
+    background-color: #ff5049;
+  }
+  
+  header .budget-type-container span {
+    color: #ffffff;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  header .budget-type-container .budget-name {
+    color: #333;
+    font-size: 0.8rem;
+  }
+  
+  header .budget-type-container .budget-expense-percent {
+    font-size: 0.6rem;
+    height: 100%;
+    padding: 4px 7px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+  }
+  .description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid silver;
+  }
+  .description-container .drop-down-container select {
+    outline: none;
+    height: 40px;
+    width: 60px;
+    /* padding: ; */
+    border: 1px solid rgba(128, 128, 128, 0.621);
+  }
+  .description-container article {
+    margin-left: 15px;
+  }
+  .description-container article:first-child {
+    margin-left: 0;
+  }
+  .description-container .text-box input {
+    width: 350px;
+  }
+  .description-container input {
+    height: 40px;
+    border: 1px solid #f7f7f7;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 15px;
+  }
+  .description-container input::placeholder {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .description-container .value-box input {
+    width: 100px;
+  }
+  .description-container .submit-container {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 128, 0, 0.949);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .submit-container i {
+    color: rgba(0, 128, 0, 0.949);
+  }
+  
+  section.budget-detail {
+    padding: 50px 0;
+  }
+  
+  section.budget-detail .budget-detail-container {
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 80px;
+  }
+  
+  section.budget-detail .budget-income-col {
+    /* outline: 1px solid green; */
+  }
+  
+  section.budget-detail .budget-income-col .income-col-title,
+  section.budget-detail .budget-expense-col .expense-col-title {
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 1.1rem;
+    color: #5f5e5e;
+  }
+  
+  section.budget-detail .col-grp {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.493);
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #5f5e5e;
+  }
+  
+  section.budget-detail .col-grp:first-child {
+    border-top: 1px solid rgba(128, 128, 128, 0.528);
+  }
+  
+  section.budget-detail .col-grp .col-grp-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  section.budget-detail .col-grp .col-icon {
+    display: none;
+  }
+  
+  section.budget-detail .col-grp:hover .col-icon {
+    display: inline;
+  }
+  
